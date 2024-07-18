@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #495057;
+    color: #CED4DA;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+strong {
+    color:#FFFFFF
+}
+
+.logo_smarterware {
+    display: flex;
+    height: 60px;
+    margin: 40px 0 0 40px;
+}
+
+.titulo_destaque {
+    color:#FFFFFF
+}
+
+.texto__aencriptar {
+    display: flex;
+    margin: -60px 0 0 160px;
+}
+
+.encriptador {
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+}
+
+.encriptador__contenido {
+    width: 615px;
+}
