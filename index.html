@@ -10,17 +10,23 @@
     <header>
         
     </header>
+    <main class="encriptador__container">
+        <div class="encriptador__logo">
         <img src="Isotipo blanco r.png" class="logo__smarterware" alt="Logo Smarterware">
-        <section class="encriptador__contenido">           
-            <h1></h1>
-            <div class="envoltura">
-                <h2>Encriptador</h2>
+        </div>
+        <section class="encriptador__contenido">
+            <h1>Encriptador</h1>           
+            <div class="textoEncriptar__container">
                 <textarea placeholder="Ingrese texto a encriptar" required></textarea>
                 <p class="indicaciones">Solo letras minúsculas y sin acentos</p>
             </div>
-            <div class="container__botones">
+            <div class="botones__container">
                 <button onclick="" class="container__boton">Encriptar</button>
                 <button onclick="" class="container__boton">Desencriptar</button>
+            </div>
+            <div class="textoEncriptado__container">
+                <img src="digital_clues.jpg" alt="digital_clues">
+                <p>Ningún mensaje fue encontrado</p>
             </div>
             <script>
                 const textarea = document.querySelector("textarea");
