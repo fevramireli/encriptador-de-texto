@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de téxto</title>
-    <link rel="stylesheet" href="styles/style.css"
+    <link rel="stylesheet" href="styles/style.css"/>
 </head>
+
 <body>
-    <header>
-        
-    </header>
-    <main class="encriptador__container">
-        <div class="encriptador__logo">
-        <img src="Isotipo blanco r.png" class="logo__smarterware" alt="Logo Smarterware">
-        </div>
-        <section class="encriptador__contenido">
-            <h1>Encriptador</h1>           
-            <div class="textoEncriptar__container">
+    <main>
+        <section class="encriptador__container">
+            <header>
+                <div class="logo__smarterware">
+                    <img src="Isotipo blanco r.png" alt="Logo Smarterware">
+                </div>
+            </header>
+            
+            <div class="encriptador__contenido">                   
+                <h1>Encriptador</h1>  
                 <textarea placeholder="Ingrese texto a encriptar" required></textarea>
-                <p class="indicaciones">Solo letras minúsculas y sin acentos</p>
+                    
+                <div class="alerta__boton">
+                    <div class="instrucciones">
+                        <img src="alerta.png" alt="instrucciones"/>
+                        <a>Solo letras minúsculas y sin acentos</a>
+                    </div>
+
+                    <div class="botonera">
+                        <button onclick="encriptar()" class="container__boton">Encriptar</button>
+                        <button onclick="desencriptar()" class="container__boton">Desencriptar</button>
+                    </div>
+                </div>
             </div>
-            <div class="botones__container">
-                <button onclick="" class="container__boton">Encriptar</button>
-                <button onclick="" class="container__boton">Desencriptar</button>
-            </div>
+        </section>
+
+        <section class="desencriptador__container">
             <div class="textoEncriptado__container">
-                <img src="digital_clues.jpg" alt="digital_clues">
+                <div class="digital__clues">
+                    <img class="imagen__output" src="digital_clues.jpg" alt="digital_clues">
+                </div>
+
                 <p>Ningún mensaje fue encontrado</p>
+                <p>Intresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <script>
-                const textarea = document.querySelector("textarea");
-                textarea.addEventListener("keyup", e =>{
-                    textarea.style.height = "auto";
-                    let scHeight = e.target.scrollHeight;
-                    textarea.style.height = `${scHeight}px`;
-                });
-            </script>
         </section>
     </main>
     <footer></footer>

@@ -1,4 +1,96 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+/*
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+*/
+.encriptador__container {
+    /**/
+}
+/*
+.logo__smarterware {
+    display: flex;
+}
+*/
+.logo__smarterware img {
+    width: 60px;
+    /*margin: 40px 0 0 40px;*/
+    margin: 2rem 0 0 2rem;
+}
+
+.encriptador__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /*margin: 25%;*/
+    /*gap: 100px;*/
+    /*justify-content: center;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+.encriptador__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6rem;
+}
+
+.encriptador__contenido textarea {
+    border: 0;
+    width: 100%;
+    height: 380px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    resize: none;
+    color: #0A3871;
+}
+
+.encriptador__contenido textarea:focus {
+    outline: none;
+}
+
+.encriptador__contenido textarea::placeholder {
+    color: #0A3871;
+}
+
+.textoEncriptado__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 944px; 
+    width: 400px; 
+    border: 2px solid black;
+    border-radius: 32px;
+    box-sizing: border-box; 
+    margin: 0 auto;
+    margin: 40px 0 0 1000px;
+}
+
+.imagen__output {
+    width: 336px;
+    border-radius: 100px;
 }
