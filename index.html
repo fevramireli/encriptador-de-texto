@@ -4,32 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de téxto</title>
+    <title>Encriptador de téxto  Oracle ONE</title>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
+       
         <section class="encriptador__container">
-            <header>
+            <!-- <header> -->
                 <div class="logo__smarterware">
-                    <img src="Isotipo blanco r.png" alt="Logo Smarterware">
+                    <img src="Isotipo color.png" alt="Logo Smarterware">
                 </div>
-            </header>
-            
+            <!-- </header> -->
+
             <div class="encriptador__contenido">                   
-                <h1>Encriptador</h1>  
                 <textarea placeholder="Ingrese texto a encriptar" required></textarea>
                     
                 <div class="alerta__boton">
                     <div class="instrucciones">
                         <img src="alerta.png" alt="instrucciones"/>
-                        <a>Solo letras minúsculas y sin acentos</a>
+                        <a class="instrucciones">Solo letras minúsculas y sin acentos</a>
                     </div>
 
-                    <div class="botonera">
-                        <button onclick="encriptar()" class="container__boton">Encriptar</button>
-                        <button onclick="desencriptar()" class="container__boton">Desencriptar</button>
+                    <div class="botonera_1">
+                        <button onclick="encriptar()" class="boton__encriptar">Encriptar</button>
+                        <button onclick="desencriptar()" class="boton__desencriptar">Desencriptar</button>
                     </div>
                 </div>
             </div>
@@ -44,7 +47,11 @@
                 <p>Ningún mensaje fue encontrado</p>
                 <p>Intresa el texto que desees encriptar o desencriptar.</p>
             </div>
+            <div class="botonera_2">
+                <button class="boton__copiar">Copiar</button>
+            </div>
         </section>
+
     </main>
     <footer></footer>
 </body>
