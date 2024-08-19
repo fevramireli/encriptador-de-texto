@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #E9ECF8;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0 0 1rem;
+}
+
+.logo__smarterware img {
+    height: 60px;
+}
+
+.encriptador__contenido {
+    margin-left: 7rem;
+}
+
+.encriptador__contenido textarea {
+    border: none;
+    color: #0A3871;
+}
+
+.encriptador__contenido textarea:focus {
+    outline: none;
+}
+
+.encriptador__contenido textarea::placeholder {
+    color: #0A3871;
+}
+
+.instrucciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: #495057;
+}
+
+.instrucciones img {
+    margin: 8px;
+}
+
+.seccion__2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+.textoEncriptado__container {
+    background-color: #FFF;
+    border-radius: 24px;
+    width: 400px;
+    padding: 1rem;
+}
+
+.textoEncriptado__container img {
+    width:100%;
+}
+
+.texto__1 {
+    background-color: #fff;
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.texto__2 {
+    background-color: #fff;
+    color: #343A40;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.texto__1 {
+    background-color: #fff;
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.texto__2 {
+    background-color: #fff;
+    color: #343A40;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.botonera__1 {
+    display: flex;
+    margin-top: 4px;
+
+}
+
+.boton__encriptar {
+    background-color: #0A3871;
+    border:  1px solid #0A3871;
+    border-radius: 24px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    width: 328px;
+    font-size: 16px;
+}
+
+.boton__desencriptar {
+    background: #D8DFE8;
+    border:  1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 16px;
+}
+
+.botonera__2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton__copiar {
+    border:  1px solid  #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    height: 50px;
+    width: 336px;
+    font-size: 16px;
+}
