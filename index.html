@@ -14,7 +14,7 @@
 <body>
     <main>
        
-        <section class="encriptador__container">
+        <section class="seccion__1">
             <!-- <header> -->
                 <div class="logo__smarterware">
                     <img src="Isotipo color.png" alt="Logo Smarterware">
@@ -22,7 +22,7 @@
             <!-- </header> -->
 
             <div class="encriptador__contenido">                   
-                <textarea placeholder="Ingrese texto a encriptar" required></textarea>
+                <textarea cols="30" rows="10" placeholder="Ingrese texto a encriptar" required></textarea>
                     
                 <div class="alerta__boton">
                     <div class="instrucciones">
@@ -30,7 +30,7 @@
                         <a class="instrucciones">Solo letras minúsculas y sin acentos</a>
                     </div>
 
-                    <div class="botonera_1">
+                    <div class="botonera__1">
                         <button onclick="encriptar()" class="boton__encriptar">Encriptar</button>
                         <button onclick="desencriptar()" class="boton__desencriptar">Desencriptar</button>
                     </div>
@@ -38,16 +38,18 @@
             </div>
         </section>
 
-        <section class="desencriptador__container">
+        <section class="seccion__2">
+            <!-- <textarea class="textoEncriptado__container"></textarea> -->
+
             <div class="textoEncriptado__container">
                 <div class="digital__clues">
                     <img class="imagen__output" src="digital_clues.jpg" alt="digital_clues">
                 </div>
 
-                <p>Ningún mensaje fue encontrado</p>
-                <p>Intresa el texto que desees encriptar o desencriptar.</p>
+                <p class="texto__1">Ningún mensaje fue encontrado.</p>
+                <p class="texto__2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <div class="botonera_2">
+            <div class="botonera__2">
                 <button class="boton__copiar">Copiar</button>
             </div>
         </section>
